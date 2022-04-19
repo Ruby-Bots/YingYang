@@ -1,7 +1,7 @@
-import { CommandInterface } from "../typings/Commands";
+import { CommandInterface } from "../typings";
 
 export class Command {
-    constructor(options: CommandInterface) {
-        Object.assign(this, options)
-    }
+  constructor(options: CommandInterface) {
+    Object.assign(this, { type: "msg", options: options });
+  }
 }

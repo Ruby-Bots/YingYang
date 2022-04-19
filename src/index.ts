@@ -1,3 +1,3 @@
-export { Command, Event, YingYang, YingYangEmbed } from "./structures";
+export { Command, Event, YingYang, YingYangEmbed, ICommand } from "./structures";
 export { CategoryOptions, Logger, Page, Pagination, PermissionResolveableFormat, StringFormat } from "./utils";
-export { flags } from "./modules/flags"
+export { LoadDefaultCommands, flags } from "./modules/"

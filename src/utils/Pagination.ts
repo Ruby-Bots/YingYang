@@ -8,7 +8,7 @@ import {
   SelectMenuInteraction,
 } from "discord.js";
 import {YingYang} from "../structures/index";
-import { ExtendedClient } from "../typings/Extended";
+import { ExtendedClient } from "../typings";
 import {Logger} from "./Logger";
 
 export interface CategoryOptions {

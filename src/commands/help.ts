@@ -1,6 +1,6 @@
 import { Command } from "../structures/Command";
 import { YingYangEmbed } from "../structures";
-import { CommandInterface } from "../typings/Commands";
+import { CommandInterface } from "../typings";
 import { PermissionResolveableFormat } from "../utils/Formatters";
 import { Page, Pagination } from "../utils/Pagination";
 
@@ -17,6 +17,10 @@ export default new Command({
         if (categories.includes(cmd.category.toLowerCase())) return;
         categories.push(cmd.category.toLowerCase());
       });
+      client.slashCommands.forEach((cmd) => {
+        if (categories.includes(cmd.category.toLowerCase())) return;
+        categories.push(cmd.category.toLowerCase());
+      });
       const dropDownCategories = [];
       categories.forEach((cata: string) => {
         dropDownCategories.push({
@@ -28,6 +32,7 @@ export default new Command({
         );
         const cmdArray = [];
         commands.forEach((c) => cmdArray.push(c));
+        client.slashCommands.filter(f => f.category.toLowerCase() === cata.toLowerCase()).forEach((cm) => { cmdArray.push(cm) })
         const CommandPages = [];
         const pageNums = 10;
         for (let i = 0; i < cmdArray.length; i++) {
