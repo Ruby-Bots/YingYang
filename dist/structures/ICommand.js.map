@@ -1,0 +1,1 @@
+{"version":3,"file":"ICommand.js","sourceRoot":"","sources":["../../src/structures/ICommand.ts"],"names":[],"mappings":";;;AAEA,MAAa,QAAQ;IACnB,YAAY,cAA6B;QACvC,MAAM,CAAC,MAAM,CAAC,IAAI,EAAE,EAAE,IAAI,EAAE,OAAO,EAAE,OAAO,EAAE,cAAc,EAAE,CAAC,CAAC;IAClE,CAAC;CACF;AAJD,4BAIC"}
