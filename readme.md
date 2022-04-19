@@ -4,7 +4,7 @@ Ying yang is a simple discord.js command handler, it has support for default com
 
 
 ```bash
-npm i ying-yang
+npm i yingyang
 ```
 
 ---
